@@ -6,8 +6,10 @@ export default defineConfig({
     baseURL: ENV.baseURL,
     headless: true,
     screenshot: 'only-on-failure',
-    storageState: 'storageState.json',
-    trace: 'on-first-retry',
+    storageState: 'config/storageState.json', 
+    trace: 'retain-on-failure', 
   },
   retries: 1,
+  fullyParallel: true,        
+  forbidOnly: !!process.env.CI,
 });

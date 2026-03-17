@@ -8,8 +8,8 @@ type PageFixtures = {
 };
 export const test = base.extend<PageFixtures>({
   loginPage: async ({ page }, use) => {
+    await page.goto('/login');
     const loginPage = new LoginPage(page);
-    await loginPage.goto();
     await use(loginPage);
   },
   dashboardPage: async ({ page }, use) => {
