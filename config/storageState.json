@@ -1,4 +1,11 @@
 {
-  "cookies": [],
+  "cookies": [
+    {
+      "name": "mock-session",
+      "value": "mock-token",
+      "domain": "localhost",
+      "path": "/"
+    }
+  ],
   "origins": []
 }
