@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test';
+import { test, expect } from '../fixtures/base.fixtures.ts';
 import users from '../../config/user.json';
 import { getUserProfile } from '../../api/user.api';
 
